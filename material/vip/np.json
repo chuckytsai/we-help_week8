@@ -1,0 +1,19 @@
+{
+    "nightwalker": [{
+            "name": "test",
+            "password": "test"
+        },
+        {
+            "name": "Alice",
+            "password": "dream"
+        },
+        {
+            "name": "Hatter",
+            "password": "teatime"
+        },
+        {
+            "name": "HeartQueen",
+            "password": "daed"
+        }
+    ]
+}

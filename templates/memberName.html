@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:3000/Alice/css/template.css">
+    <title>forget your name</title>
+</head>
+
+<style>
+    body {
+        background-image: url("http://127.0.0.1:3000/Alice/img/cat.jpg");
+    }
+</style>
+
+<body>
+
+
+    <label id="verify">Who are you ?</label>
+
+    <h2 class="verifyInput">You forgot your name, pathetic....</h2>
+    <form id="IdPw" action="/IdPw" method="POST">
+        <div>
+            <a href="/logout" class="verifyInput">Run</a>
+        </div>
+    </form>
+
+    <audio id="myaudio" src="http://127.0.0.1:3000/Alice/media/Dr._Bumby.mp3" controls="controls" autoplay hidden="true"></audio>
+</body>
+
+</html>

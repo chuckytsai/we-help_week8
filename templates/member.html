@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:3000/spider/css/templateMember.css">
+    <title>{{Myname }} signing in</title>
+    <link rel="icon" href=".http://127.0.0.1:3000/spider/img/spiderman.icon.png" type="image/x-icon">
+    <script src="http://127.0.0.1:3000/spider/js/template.js"></script>
+</head>
+
+<body>
+    <label id="verify">Welcome <span> ! </span> <span name="welcome"> {{Myname}}</span> ,I am Your friendly
+        neighborhood</label>
+    <div class="logoutB">
+        <a href="/logout">登 出</a>
+    </div>
+
+    <!-- 查詢並列印會員的form -->
+    <div class="fromBlock" style="display: none;">
+        <h2 class="verifyTitle">Print Your partner data</h2>
+        <form class="registered" id="username" class="nodirect" action="/api/users">
+            <div>
+                <h5 class="verifyInput">User Name</h5>
+            </div>
+        </form>
+    </div>
+
+    <div class="fromBlock">
+        <input class="verifyInput" id="searchUserKey" type="text" name="username" />
+        <button class="verifyInput justButton" onclick="fetchSearch()">查 詢 會 員 資 料</button>
+        <div class="verifyInput" id="showData"></div>
+    </div>
+
+    <!-- 變更姓名的form -->
+    <div class="fromBlock">
+        <h2 class="verifyTitle">Do you want change username ?</h2>
+        <form name='form' id='ContentType' class="registered">
+            <h5 class="verifyInput">old username</h5>
+            <input type='text' id='userKey' class="verifyInput" />
+            <br>
+            <input type='submit' id='submit' value='變 更' class="verifyInput justButton" />
+            <div class="OKMassage" id="OKMassage"> 變 更 成 功</div>
+            <div class="OKMassage" id="errorMassage"> 變 更 失 敗</div>
+        </form>
+    </div>
+
+</body>
+
+</html>
